@@ -1,0 +1,17 @@
+.vscode
+
+Dockerfile
+README.md
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+.pytest_cache
+bin
+include
+lib
+pyvenv.cfg
+node_modules
+package-lock.json
+jenkinsfile
+Docker
