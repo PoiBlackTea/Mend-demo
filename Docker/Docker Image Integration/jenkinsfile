@@ -25,7 +25,7 @@ pipeline {
                         error("docker build failed")
                     }
 
-                    sh "sed -i 's/b0e9f9f047e6/${docker_name} ${tag}.*/g' ${DIR}/wss-unified-agent.config"
+                    sh "sed -i 's/b0e9f9f047e6/${docker_name} ${tag}.*/g' '''Docker/Docker Image Integration/wss-unified-agent.config'''"
                 }
             }
         }
