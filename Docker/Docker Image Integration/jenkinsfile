@@ -50,7 +50,7 @@ pipeline {
              steps { 
                script {
                    withEnv(["WS_USERKEY=${WS_USERKEY}", "WS_APIKEY=${WS_APIKEY}", "WS_PROJECTNAME=${WS_PROJECTNAME}"]) {
-                   sh 'java -jar wss-unified-agent.jar'
+                   sh 'java -jar wss-unified-agent.jar -c "Docker/Docker Image Integration/wss-unified-agent.config"' 
                    }
                }
           }
