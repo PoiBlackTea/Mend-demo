@@ -10,27 +10,6 @@ pipeline {
     }
     
     stages {
-        stage('Build') {
-            steps{
-                script{
-
-                    
-                    try {
-                        checkout([
-                            $class: 'GitSCM',
-                            branches: [[name: 'dev']],
-                            userRemoteConfigs: [[
-                                url: 'https://github.com/PoiBlackTea/Mend-demo.git'
-                            ]]
-                        ])
-                        echo "git clone success"
-                    } catch(Exception e) {
-                        echo 'Exception occurred: ' + e.toString()
-                        error("Checkout failed")
-                    }
-                }
-            }
-        }
         
         stage('Download Mend Script') {
           steps {
