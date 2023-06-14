@@ -10,7 +10,7 @@ The examples shown use the global properties. Make sure you create the following
 
 * WS_APIKEY (Integration -> Organization APIKEY from your production organization)
 * WS_USERKEY (User Profile -> User Keys section from your production organization)
-* WS_WSS_URL (https://<Mend URL>/agent)
+* WS_WSS_URL (https://\<Mend URL>/agent)
 
 ## Ref:
 - [SCA Overview](https://docs.mend.io/bundle/sca_user_guide/page/sca_overview.html)
